@@ -1,0 +1,53 @@
+// @import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Encode+Sans:wght@200;300;500;600&display=swap');
+@import './variables.scss';
+@import './breakpoints.scss';
+
+:root {
+  font-size: 0.9rem;
+  word-spacing: 0.7px;
+  letter-spacing: 0.5px;
+}
+
+body {
+  background-color: $page-background;
+  font-family: $primary-font !important;
+}
+
+.textPrimary {
+  color: $primary-color;
+}
+
+.textSecondary {
+  color: $secondary-color;
+}
+
+.bgPrimary {
+  background-color: $primary-color;
+}
+
+.bgSecondary {
+  background-color: $secondary-color;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: bold;
+  border-radius: $curved-edge-size !important;
+  background-color: lightgrey !important;
+}
+
+.nav-link.active {
+  background-color: $primary-color !important;
+  color: #000 !important;
+}
+
+.sectionTitle {
+  font-family: $curly-font;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+
+  @include lg {
+    font-size: 5rem;
+  }
+}

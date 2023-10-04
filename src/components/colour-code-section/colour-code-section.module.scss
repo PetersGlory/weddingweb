@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.colourCodeSection {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: white;
+
+  div {
+    margin-bottom: 10px;
+  }
+  .title {
+    margin-bottom: 15px;
+    font-size: x-large;
+    font-family: $curly-font;
+  }
+  .colourBoxWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .colourBox {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../styles/variables.scss';
+
+.button {
+  font-size: 0.9rem;
+  word-spacing: 0.7px;
+  letter-spacing: 0.8px;
+  padding: 12px 18px;
+
+  &:hover {
+    color: #000;
+    background-color: $primary-color !important;
+  }
+}

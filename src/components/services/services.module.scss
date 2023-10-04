@@ -1,0 +1,20 @@
+@import '../../styles/variables.scss';
+
+.services {
+  background-color: #fff;
+  padding-bottom: 70px;
+
+  .socialIconBg {
+    display: inline;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+
+    &:hover {
+      background-color: $primary-color;
+      transition: 0.5s;
+    }
+  }
+}

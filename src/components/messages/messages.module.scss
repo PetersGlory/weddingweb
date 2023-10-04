@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+
+.messages {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  .messagesContainer {
+  }
+
+  .messageCard {
+    padding: 22px;
+    border-radius: $curved-edge-size;
+  }
+
+  .messagesContainer::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,92 @@
+@import '../../styles/breakpoints.scss';
+@import '../../styles/variables.scss';
+
+.heroBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../../../public/images/hero.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position-x: 60%;
+  height: 70vh;
+
+  @include md {
+    background-attachment: fixed;
+    height: 88vh;
+  }
+
+  @include lg {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../../../public/images/hero-5.jpeg');
+    background-position-y: 25%;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+  }
+
+  .title {
+    // color: rgba(225, 225, 225, 0.01);
+    color: #ffffff;
+    // background-image: url('../../../public/images/hero.jpeg');
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: animate 15s ease-in-out infinite;
+    margin: 0;
+
+    @include md {
+      font-size: 4rem;
+    }
+    @include lg {
+      font-size: 5.5rem;
+    }
+  }
+
+  @keyframes animate {
+    0%,
+    100% {
+      background-position: left top;
+    }
+    25% {
+      background-position: right bottom;
+    }
+    50% {
+      background-position: left bottom;
+    }
+    75% {
+      background-position: right top;
+    }
+  }
+
+  .imageContainer {
+    width: 100% !important;
+    height: 450px;
+    position: relative;
+  }
+
+  .imageContainer > div {
+    height: inherit;
+    position: unset !important;
+  }
+
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    word-spacing: 0.7px;
+    letter-spacing: 0.8px;
+    padding: 12px 18px;
+    border-radius: $curved-edge-size;
+    background-color: #ffffff;
+
+    &:hover {
+      color: #000;
+      background-color: $primary-color;
+    }
+  }
+}

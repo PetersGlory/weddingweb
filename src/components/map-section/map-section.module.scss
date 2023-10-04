@@ -1,0 +1,14 @@
+@import '../../styles/breakpoints.scss';
+
+.mapSection {
+  background-color: #fff;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  @include md {
+    padding: 70px 70px;
+  }
+  @include lg {
+    padding: 70px 200px;
+  }
+}

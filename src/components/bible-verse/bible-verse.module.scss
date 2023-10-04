@@ -1,0 +1,35 @@
+@import '../../styles/breakpoints.scss';
+
+.parallax {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../../../public/images/hero-2.jpeg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 148%;
+  background-position: center;
+  margin-top: 70px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include md {
+    background-size: 100%;
+    background-position: top;
+  }
+
+  @include lg {
+    background-size: 100%;
+    background-position: 0 10%;
+  }
+
+  .largeText {
+    font-size: 2rem;
+
+    @include md {
+      font-size: 3rem;
+    }
+
+    @include lg {
+      font-size: 3.5rem;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.gallery {
+  background-color: white;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  .imageContainer {
+    width: 100% !important;
+    height: 450px;
+    position: relative;
+  }
+
+  .imageContainer > div {
+    height: inherit;
+    position: unset !important;
+  }
+
+  .image {
+    object-fit: cover;
+    object-position: top;
+    width: 100% !important;
+    position: relative !important;
+    height: unset;
+  }
+}

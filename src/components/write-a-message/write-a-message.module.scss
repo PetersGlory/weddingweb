@@ -1,0 +1,57 @@
+@import '../../styles/breakpoints.scss';
+
+.writeAMessage {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../../../public/images/hero-6.jpeg');
+  //   height: 70vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 148%;
+  background-position: center;
+
+  .iframeContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 340px;
+    padding-top: 160%;
+
+    @include md {
+      background-size: 100%;
+      background-position: top;
+      padding-top: 80%;
+    }
+
+    @include lg {
+      background-size: 100%;
+      background-position: 0 10%;
+      padding-top: 43%;
+    }
+  }
+
+  .iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include md {
+    background-size: 100%;
+    background-position: top;
+  }
+
+  @include lg {
+    background-size: 100%;
+    background-position: 0 10%;
+  }
+
+  .largeText {
+    font-size: 4rem;
+  }
+}
